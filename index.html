@@ -9,21 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700&family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg:           #ffffff;
-      --surface:      #f9f9f9;
-      --surface2:     #f2f2f2;
-      --border:       #e2e2e2;
-      --red:          #D72638;
-      --red-mid:      #b81e2d;
-      --red-light:    #e84d5c;
-      --red-pale:     #fcedef;
-      --red-xpale:    #fdf5f6;
-      --text:         #111111;
-      --text-muted:   #5a5a5a;
-      --text-dim:     #aaaaaa;
+      --bg:           #F5F0E8;
+      --surface:      #EDE8DF;
+      --surface2:     #E4DED4;
+      --border:       #D4CEC4;
+      --red:          #4A2812;
+      --red-mid:      #3A1E0D;
+      --red-light:    #6B3D20;
+      --red-pale:     #E8DDD4;
+      --red-xpale:    #F0EBE4;
+      --text:         #1C1812;
+      --text-muted:   #5C5448;
+      --text-dim:     #A09888;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    p, div { word-break: keep-all; }
     html { scroll-behavior: smooth; }
 
     body {
@@ -45,7 +46,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255,255,255,0.93);
+      background: rgba(245,240,232,0.93);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
@@ -212,7 +213,7 @@
     .btn-primary:hover {
       background: var(--red-mid);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(215,38,56,0.28);
+      box-shadow: 0 8px 24px rgba(74,40,18,0.3);
     }
 
     .btn-secondary {
@@ -301,9 +302,9 @@
       transition: opacity 0.22s;
     }
     .skill-card:hover {
-      box-shadow: 0 4px 24px rgba(215,38,56,0.08);
+      box-shadow: 0 4px 24px rgba(74,40,18,0.1);
       transform: translateY(-2px);
-      border-color: rgba(215,38,56,0.2);
+      border-color: rgba(74,40,18,0.3);
     }
     .skill-card:hover::before { opacity: 1; }
 
@@ -341,7 +342,7 @@
     }
 
     .tag.highlight {
-      border-color: rgba(215,38,56,0.3);
+      border-color: rgba(74,40,18,0.35);
       color: var(--red-mid);
       background: var(--red-pale);
       font-weight: 500;
@@ -357,8 +358,8 @@
       transition: border-color 0.3s, box-shadow 0.3s;
     }
     .project-card:hover {
-      border-color: rgba(215,38,56,0.35);
-      box-shadow: 0 8px 32px rgba(215,38,56,0.08);
+      border-color: rgba(74,40,18,0.35);
+      box-shadow: 0 8px 32px rgba(74,40,18,0.08);
     }
 
     .project-header {
@@ -374,7 +375,7 @@
       font-size: 72px;
       line-height: 1;
       margin-bottom: 4px;
-      -webkit-text-stroke: 2px rgba(215,38,56,0.2);
+      -webkit-text-stroke: 2px rgba(74,40,18,0.2);
       color: transparent;
     }
 
@@ -461,7 +462,7 @@
     .detail-idx {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 20px;
-      -webkit-text-stroke: 1.5px rgba(215,38,56,0.4);
+      -webkit-text-stroke: 1.5px rgba(74,40,18,0.4);
       color: transparent;
       line-height: 1.2;
     }
@@ -489,7 +490,7 @@
       font-size: 11px;
       color: var(--red-mid);
       background: var(--red-pale);
-      border: 1px solid rgba(215,38,56,0.2);
+      border: 1px solid rgba(74,40,18,0.25);
       padding: 4px 10px;
       border-radius: 2px;
       letter-spacing: 0.04em;
@@ -515,7 +516,7 @@
       padding: 24px 28px;
       transition: border-color 0.2s;
     }
-    .info-cell:hover { border-color: rgba(215,38,56,0.3); }
+    .info-cell:hover { border-color: rgba(74,40,18,0.35); }
 
     .info-cell-label {
       font-family: 'Archivo', sans-serif;
@@ -570,11 +571,11 @@
       width: 10px; height: 10px;
       border-radius: 50%;
       background: var(--bg);
-      border: 2px solid var(--border);
+      border: 2px solid var(--red);
     }
     .timeline-item.highlight::before {
       border-color: var(--red);
-      background: var(--red);
+      background: var(--bg);
     }
 
     .timeline-date {
@@ -599,7 +600,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: #111111;
+      background: #1C1812;
       padding: 36px 48px;
       display: flex;
       justify-content: space-between;
@@ -614,7 +615,7 @@
       color: rgba(255,255,255,0.4);
       letter-spacing: 0.06em;
     }
-    .footer-text span { color: var(--red-light); }
+    .footer-text span { color: var(--bg); }
 
     .footer-links {
       display: flex;
@@ -672,18 +673,17 @@
 <div class="hero">
   <div class="hero-deco"></div>
   <div class="hero-content">
-    <div class="hero-tag fade-up d1">Visual Designer · 신입</div>
+    <div class="hero-tag fade-up d1">Graphic Designer</div>
     <h1 class="hero-name fade-up d2">이지우</h1>
     <div class="hero-subtitle fade-up d3">Lee Jiwoo</div>
     <p class="hero-desc fade-up d4">
       시장 분석부터 VMD 연출까지,<br />
       디자인의 전 과정을 직접 주도하는 디자이너.<br />
-      기획 의도를 일관된 퀄리티의 결과물로 완성합니다.
+      브랜드의 언어를 디자인으로 완성합니다.
     </p>
     <div class="hero-links fade-up d5">
       <a href="resume.pdf" class="btn btn-primary" target="_blank">↓ 이력서 다운로드</a>
       <a href="portfolio.pdf" class="btn btn-secondary" target="_blank">↓ 포트폴리오 다운로드</a>
-      <a href="mailto:maro930@naver.com" class="btn btn-ghost">maro930@naver.com ↗</a>
     </div>
   </div>
 </div>
@@ -697,7 +697,7 @@
   <div class="skills-grid">
 
     <div class="skill-card">
-      <div class="skill-card-label">CORE</div>
+      <div class="skill-card-label">DESIGN</div>
       <div class="skill-card-title">그래픽 디자인</div>
       <div class="skill-tags">
         <span class="tag highlight">Adobe Illustrator</span>
@@ -712,6 +712,7 @@
       <div class="skill-tags">
         <span class="tag highlight">Midjourney</span>
         <span class="tag highlight">Adobe Firefly</span>
+        <span class="tag highlight">Higgsfield AI</span>
       </div>
     </div>
 
@@ -767,7 +768,7 @@
       <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;">
         <span class="project-badge">🏆 Graphis Honorable Mention</span>
         <span class="project-badge">🥉 IDA Bronze</span>
-        <span class="project-badge">🎓 졸전 2위</span>
+        <span class="project-badge">🎓 졸업전시회 2위</span>
       </div>
     </div>
     <div class="project-details">
@@ -786,7 +787,7 @@
         <div class="detail-idx">02</div>
         <div>
           <div class="detail-headline">비주얼 방향성 수립 및 디자인 고도화</div>
-          <div class="detail-body">프로젝트 전반의 시각적 언어를 정의하고, 일관된 퀄리티의 결과물로 완성했습니다. 사용 툴: Adobe Illustrator, Photoshop, Firefly, Midjourney, Figma.</div>
+          <div class="detail-body">프로젝트 전반의 시각적 언어를 정의하고, 일관된 퀄리티의 결과물로 완성했습니다.</div>
           <div class="detail-result">국내외 3개 디자인 어워드 수상</div>
         </div>
       </div>
@@ -934,7 +935,7 @@
     </div>
     <div class="info-cell">
       <div class="info-cell-label">Affiliation</div>
-      <div class="info-cell-value">(주)픽셀허브디자인그룹 프리랜서</div>
+      <div class="info-cell-value">(주)픽셀허브디자인그룹 프리랜서 디자이너</div>
     </div>
   </div>
 
@@ -950,7 +951,7 @@
         <div class="timeline-item highlight">
           <div class="timeline-date">2020.03 — 2026.08</div>
           <div class="timeline-name">한성대학교 시각디자인과</div>
-          <div class="timeline-detail">콘텐츠디자인칼리지 · 학점 3.97 / 4.5 · 졸업예정</div>
+          <div class="timeline-detail">콘텐츠디자인칼리지</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2024.09 — 2024.12</div>
@@ -966,22 +967,22 @@
         <div class="timeline-item highlight">
           <div class="timeline-date">2026.05</div>
           <div class="timeline-name">Graphis New Talent Awards 2026</div>
-          <div class="timeline-detail">Honorable Mention — Cine Comma</div>
+          <div class="timeline-detail">Honorable Mention</div>
         </div>
         <div class="timeline-item highlight">
           <div class="timeline-date">2025.12</div>
           <div class="timeline-name">The 19th International Design Awards (USA)</div>
-          <div class="timeline-detail">Bronze — Cine Comma</div>
+          <div class="timeline-detail">Bronze</div>
         </div>
         <div class="timeline-item highlight">
           <div class="timeline-date">2025.12</div>
           <div class="timeline-name">제29회 KVMD 공모전</div>
-          <div class="timeline-detail">입선 — 밀리의 마법 서재</div>
+          <div class="timeline-detail">입선</div>
         </div>
         <div class="timeline-item highlight">
           <div class="timeline-date">2025.10</div>
           <div class="timeline-name">한성대 콘텐츠디자인칼리지 졸업전시회</div>
-          <div class="timeline-detail">2위 — Cine Comma</div>
+          <div class="timeline-detail">2위</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2021.06</div>
@@ -1001,7 +1002,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-text">© 2026 <span>이지우</span> · Visual Designer</div>
+  <div class="footer-text">© 2026 <span>이지우</span> · Graphic Designer</div>
   <div class="footer-links">
     <a href="resume.pdf" target="_blank">Resume</a>
     <a href="portfolio.pdf" target="_blank">Portfolio</a>
